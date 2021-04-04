@@ -1,0 +1,36 @@
+<!--
+  Still, the web form does not do anything. 
+
+  We need to have a way to actually submit the information; therfore, we need to have a button.
+
+  We create this button by saying:
+
+  <button type = "submit" Submit </button>
+
+  This creates a button that, when clicked, will submit the form to the URL server that we specified.
+
+  Note that we have to specify the button within the <form> </form> tag
+-->
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL">
+    <button type = "submit"> Submit </button>
+  </form>
+</main>

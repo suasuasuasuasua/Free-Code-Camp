@@ -1,0 +1,32 @@
+<!--
+  If we want the user to fill out a form before proceeding anywhere else, we can make the input field required.
+
+  We do this by specifying the required attribute within the <input> tag:
+
+  <input type = "text" placeholder = "text" required>
+
+  If we don't submit anything to the form, then the HTML5 form will notify the user that we have to submit something.
+-->
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL"required>
+    <button type="submit">Submit</button>
+  </form>
+</main>

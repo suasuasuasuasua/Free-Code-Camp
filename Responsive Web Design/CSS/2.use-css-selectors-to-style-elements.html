@@ -1,0 +1,50 @@
+<!--
+  In the 1., we manually changed the color of <h2> using the style attribute. 
+
+  That is a fine way to change the styling, but a more general way to do so is to declare a CSS styling guide at the top of the HTML file.
+
+  Note how the  things we want to change go in between the <style></style> tags.
+
+  Also note how we declae h2{}. This sets the style for all <h2> tags in the HTML file.
+  
+  Between the curly brackets, we set whatever we need to.
+
+  Make sure to add a semicolon to the end of each of the element style rules. 
+-->
+<style>
+  h2 {
+    color: blue;
+  }
+</style>
+
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <div>
+    <p>Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+  </div>
+
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</main>

@@ -1,0 +1,55 @@
+<!--
+  Yet another kind of form we can create is called the checkbox form. The user is allowed to 'check' more than one answer that may apply to them, and therefore we may gather more than one answer, unlike the radio buttons.
+
+  The format is similar to the radio buttons:
+
+  <form>
+    <label for "option 1">
+      <input id = "option 1" type = "checkbox" name = "question 1"> Option 1 
+    </label>
+
+    <label for "option 2">
+      <input id = "option 2" type = "checkbox" name = "question 2"> Option 2 
+
+    </label>
+    ...
+  </form>
+
+  Note here however that we declare the type as checkbox instead
+  The trickiest part may be to remember what goes where, as things as not literally explicit in HTML
+-->
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <form>
+    <label for "loving">
+      <input id = "loving" type = "checkbox" name = "personality"> Loving </label>
+    <label for "energetic">
+      <input id = "energetic" type = "checkbox" name = "personality"> Energetic </label>
+    <label for "quiet">
+      <input id = "quiet" type = "checkbox" name = "personality"> Quiet </label>
+  </form>
+
+</main>

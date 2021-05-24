@@ -1,0 +1,24 @@
+<!--
+  We have just found out that class selectors will override general stylings.
+
+  In this problem, we declare a second class called blue-text.
+
+  I assign both of the classes to the h1 element, but it turns out that the resulting h1 will become blue because the blue-text class is declared after the pink-text class. 
+
+  Therefore, the order in which the classes are declared in the <h1 class = "..."> does not matter. The only thing that matters is when the class was declared.
+-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>

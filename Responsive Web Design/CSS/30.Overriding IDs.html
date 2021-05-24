@@ -1,0 +1,29 @@
+<!--
+  Using inline styles, we can override even ID stylings.
+
+  The format would look something like this:
+
+  <h1 style = "color: green;"> ... </h1>
+
+  In this assignment, note that h1 has two classes assigned to it, as well as an ID styling. 
+
+  It turns out that the text will end up white because inline styling takes precedence.
+-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style = "color: white;">Hello World!</h1>

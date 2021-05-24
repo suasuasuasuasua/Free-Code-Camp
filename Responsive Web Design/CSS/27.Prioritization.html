@@ -1,0 +1,19 @@
+<!--
+  When HTML elements recieve multiple stlyes that conflict with one another, we need to think about priority.
+
+  In this problem, all body elements will be colored green, but we also assign a 'pink-text' class to the h1 element.
+
+  It turns out that class selectors will override the body element's property.
+-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+</style>
+<h1 class = "pink-text">Hello World!</h1>

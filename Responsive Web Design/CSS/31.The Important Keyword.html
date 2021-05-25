@@ -1,0 +1,29 @@
+<!--
+  The most powerful overriding tool we have is called "!important"
+
+  We will generally be important CSS modules, but we don't want our own styles to change.
+
+  To do this, we add the "!important" after the attribute:
+
+    .pink-text {
+      color: pink !important;
+    }
+-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>

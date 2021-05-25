@@ -1,0 +1,20 @@
+<!--
+  In the case that your CSS cannot be parsed, a browser will simply ignore what it cannot understand and use default values.
+
+  This is obviously not ideal, so a fine workaround is to declare a broswer fallback. This is so we can compensate for older browsers like Internet Explorer, which cannot understand variables.
+
+  In this problem, all we do is declare two background attributes, such that the original red will be used if the browser cannot recognize variables.
+-->
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>

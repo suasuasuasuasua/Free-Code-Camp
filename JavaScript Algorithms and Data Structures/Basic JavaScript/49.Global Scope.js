@@ -27,3 +27,6 @@ function fun2() {
   }
   console.log(output);
 }
+
+fun1();
+fun2();
